@@ -32,31 +32,29 @@ body
     align-items: center;
     margin: auto;
     transition:.6s;
-    font-weight: bold;
-    color: white;
 }
 
 .product h3
 {
-
+    font-weight: bold;
     font-size: 26px;
     transition: .6s;
 }
 
 .product p
 {
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 15px;
     transition: .6s;
 }
-.product:hover .number
+.product .number:hover
 {
     box-shadow: 0 0 0 400px #00aaa7;
 }
-
-.product:hover h3, 
-.product:hover p
+.product:hover
+.product h3,
+.product p
 {
-    color: white;
+    color: #ddd;
 }
 
