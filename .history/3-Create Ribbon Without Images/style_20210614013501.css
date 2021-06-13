@@ -26,7 +26,7 @@ body
     background-color: #00aaa7;
     color: white;
     padding:15px;
-    width: calc(100% + 70px);
+    width: calc(100% + 80px);
     position: relative;
     left: -40px;
 }
@@ -34,23 +34,12 @@ body
 .product h2::before
 {
     content: "";
-    border-color: #00827f #00827f transparent transparent ;
-    border-width: 13px;
+    border-color: red green blue yellow;
+    border-width: 10px;
     border-style: solid;
     position: absolute;
     left: 0;
-    bottom: -26px;
-}
-
-.product h2::after
-{
-    content: "";
-    border-color:  #00827f transparent transparent #00827f ;
-    border-width: 13px;
-    border-style: solid;
-    position: absolute;
-    right: 0;
-    bottom: -26px;
+    bottom: -20px;
 }
 
 .product p

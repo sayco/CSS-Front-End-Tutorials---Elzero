@@ -42,16 +42,7 @@ body
     bottom: -26px;
 }
 
-.product h2::after
-{
-    content: "";
-    border-color:  #00827f transparent transparent #00827f ;
-    border-width: 13px;
-    border-style: solid;
-    position: absolute;
-    right: 0;
-    bottom: -26px;
-}
+
 
 .product p
 {

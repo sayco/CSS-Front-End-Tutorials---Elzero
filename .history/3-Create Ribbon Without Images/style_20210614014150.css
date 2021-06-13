@@ -45,7 +45,7 @@ body
 .product h2::after
 {
     content: "";
-    border-color:  #00827f transparent transparent #00827f ;
+    border-color: transparent #00827f #00827f transparent ;
     border-width: 13px;
     border-style: solid;
     position: absolute;

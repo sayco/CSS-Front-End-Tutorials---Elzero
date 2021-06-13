@@ -34,23 +34,12 @@ body
 .product h2::before
 {
     content: "";
-    border-color: #00827f #00827f transparent transparent ;
-    border-width: 13px;
+    border-color: #00aaa7 #00aaa7 transparent transparent ;
+    border-width: 10px;
     border-style: solid;
     position: absolute;
     left: 0;
-    bottom: -26px;
-}
-
-.product h2::after
-{
-    content: "";
-    border-color:  #00827f transparent transparent #00827f ;
-    border-width: 13px;
-    border-style: solid;
-    position: absolute;
-    right: 0;
-    bottom: -26px;
+    bottom: -20px;
 }
 
 .product p
