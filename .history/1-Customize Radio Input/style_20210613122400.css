@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;;
+}
+
+form{
+    width: 400px;
+    background-color: #eee;
+    margin:20px auto;
+}
+
+form label{
+    padding: 10px 10px;;
+}

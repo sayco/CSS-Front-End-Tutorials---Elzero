@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;;
+}
+
+form{
+    width: 400px;
+    background-color: #eee;
+    margin:20px auto;
+}
+
+form div{
+    padding: 5px 0;;
+}
+
+form label
+{
+    padding:0px 10px;
+}
+
+form label ::before
+{
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: relative;
+    background-color: #fff;
+
+}
+
+form label ::after
