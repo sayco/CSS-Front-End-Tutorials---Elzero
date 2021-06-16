@@ -1,0 +1,27 @@
+/* start of variable */
+/* end of variables */
+/* start of global rules` */
+*
+{
+  box-sizing: border-box;
+  
+}
+
+body
+{
+  font-family: 'Work Sans', sans-serif;
+}
+/* end of global rules */
+
+.parent
+{
+  background-color: #eee;
+}
+
+.container
+{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
