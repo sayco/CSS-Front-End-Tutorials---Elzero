@@ -22,6 +22,11 @@ body
   padding-right: 15px;
 }
 
+.container .logo
+{
+  width: 60px;
+}
+
 /** Start media query **/
 
 /* Small devices (landscape phones, 576px and up) */
@@ -58,30 +63,19 @@ body
   align-items: center;
 }
 
-.header .logo
-{
-  width: 60px;
-}
-
-.header .links
-{
-  position: relative;
-}
-
-.header .links .icon
+.header .container .links .icon
 {
   width: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
 }
 
-.header .links .icon span
+.header .container .links .icon span
 {
+
+  height: 3px;
   background-color: #333;
   margin-bottom: 5px;
-  height: 2px;
-  transition: .6s;
 }
 
 .header .container .links .icon span:first-child
@@ -92,7 +86,6 @@ body
 .header .container .links .icon span:nth-child(2)
 {
   width: 60%;
-  transition: .6s;
 }
 
 .header .container .links .icon span:last-child
@@ -103,12 +96,5 @@ body
 .header .container .links:hover .icon span:nth-child(2)
 {
   width: 100%;
-}
-
-.header .container .links:hover .icon span
-{
-  margin-bottom: 8px;
-  height: 5px;
-
 }
 /** End Header **/

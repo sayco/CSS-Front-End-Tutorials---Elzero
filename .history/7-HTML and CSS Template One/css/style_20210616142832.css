@@ -51,6 +51,8 @@ body
   padding: 20px;
 }
 
+
+
 .header .container
 {
   display: flex;
@@ -63,24 +65,19 @@ body
   width: 60px;
 }
 
-.header .links
-{
-  position: relative;
-}
-
-.header .links .icon
+.header .container .links .icon
 {
   width: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
 }
 
-.header .links .icon span
+.header .container .links .icon span
 {
+
+  height: 3px;
   background-color: #333;
   margin-bottom: 5px;
-  height: 2px;
   transition: .6s;
 }
 
