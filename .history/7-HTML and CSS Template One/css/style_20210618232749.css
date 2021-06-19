@@ -84,17 +84,6 @@ body
   padding: 0;
 }
 
-.header .links ul::before
-{
-  content: "";
-  position: absolute;
-  border-style: solid;
-  border-width: 15px;
-  border-color:  transparent transparent #eee transparent;
-  right: 0;
-  top: -30px;
-}
-
 .header .links ul li
 {
   padding: 15px;
@@ -133,8 +122,6 @@ body
 {
   display:block;
 }
-
-
 
 .header .links .icon span
 {

@@ -72,38 +72,24 @@ body
 {
   background-color: #eee;
   padding: 15px;
-  display: none;
-  position: absolute;
-  right: 0;
+  /* text-decoration: none; */
 }
 
 .header .links ul
 {
   list-style: none;
   width: 200px;
-  padding: 0;
-}
-
-.header .links ul::before
-{
-  content: "";
-  position: absolute;
-  border-style: solid;
-  border-width: 15px;
-  border-color:  transparent transparent #eee transparent;
-  right: 0;
-  top: -30px;
 }
 
 .header .links ul li
 {
-  padding: 15px;
+  margin: 15px;
   display: block;
 }
 
 .header .links ul li:not(:last-child)
 {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #333;
 }
 
 .header .links ul a
@@ -111,13 +97,13 @@ body
   /* position:absolute; */
   text-decoration: none;
   color: #333;
+  margin-bottom: 15px;
   transition: 0.3s;
 }
 
 .header .links ul li:hover a
 {
   padding-left: 20px;  
-
 }
 
 .header .links .icon
@@ -127,14 +113,6 @@ body
   flex-wrap: wrap;
   justify-content: flex-end;
 }
-
-
-.header .links:hover ul
-{
-  display:block;
-}
-
-
 
 .header .links .icon span
 {
@@ -165,4 +143,10 @@ body
   width: 100%;
 }
 
+.header .container .links:hover .icon span
+{
+  margin-bottom: 8px;
+  height: 5px;
+
+}
 /** End Header **/

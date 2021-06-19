@@ -72,7 +72,7 @@ body
 {
   background-color: #eee;
   padding: 15px;
-  display: none;
+  /* display: none; */
   position: absolute;
   right: 0;
 }
@@ -86,13 +86,7 @@ body
 
 .header .links ul::before
 {
-  content: "";
-  position: absolute;
-  border-style: solid;
-  border-width: 15px;
-  border-color:  transparent transparent #eee transparent;
-  right: 0;
-  top: -30px;
+  border: 1px solid red blue green yellow;
 }
 
 .header .links ul li
