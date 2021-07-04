@@ -1,7 +1,8 @@
 /** start of variable **/
 :root
 {
-  --main-color:#10cab7
+  --main-color:#10cab7;
+  --secondary-color:#2c4755;
 }
 /** end of variables **/
 
@@ -254,5 +255,72 @@ position: relative;
 /** END Features section **/
 
 /** Start Services Section **/
-
+.services .services-content
+{
+  display: grid;
+  grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  margin-top: 100px;
+}
+.services .services-content .service
+{
+  display: flex;
+  margin-bottom: 40px;
+}
+@media (max-width:767px)
+{
+  .services .services-content .service
+  {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.services .service i
+{
+  color:var(--main-color);
+  flex-basis: 60px;
+  font-size: 2em;
+}
+.services .service .service-text
+{
+  flex: 1;
+}
+.services .service .service-text h3
+{
+  margin: 0 0 20px;
+}
+.services .service .service-text p
+{
+  color: #444;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.services .image
+{
+  text-align: center;
+  position: relative;
+}
+.services .image::before
+{
+  content: "";
+  background-color: var(--secondary-color);
+  position: absolute;
+  width: 140px;
+  height: calc(100% + 100px);
+  right: 0;
+  top: -50px;
+  z-index: -1;
+  border-radius: 10px;
+}
+.services .image img
+{
+  width: 260px;
+}
+@media (max-width: 1199px)
+{
+  .services .image
+  {
+    display: none;
+  }
+}
 /** End Services Section **/
