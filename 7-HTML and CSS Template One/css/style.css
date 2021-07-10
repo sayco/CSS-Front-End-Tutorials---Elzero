@@ -3,6 +3,9 @@
 {
   --main-color:#10cab7;
   --secondary-color:#2c4755;
+  --section-color:#f6f6f6;
+
+  --section-padding:60px;
 }
 /** end of variables **/
 
@@ -222,9 +225,9 @@ position: relative;
 /** Start Features section **/
 .features
 {
-  background-color: #f6f6f6;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  background-color: var(--section-color);
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
 .features .container
 {
@@ -255,6 +258,11 @@ position: relative;
 /** END Features section **/
 
 /** Start Services Section **/
+.services
+{
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
 .services .services-content
 {
   display: grid;
@@ -324,3 +332,143 @@ position: relative;
   }
 }
 /** End Services Section **/
+
+/** START Portfolio Section **/
+.portfolio
+{
+  background-color: var(--section-color);
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.portfolio .portfolio-content
+{
+  display: grid;
+  grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  margin-top: 100px;
+}
+.portfolio .portfolio-content .card
+{
+  background-color: white;
+}
+.portfolio .portfolio-content .card img
+{
+  max-width: 100%;
+}
+.portfolio .portfolio-content .card .info
+{
+  padding: 20px;
+}
+.portfolio .portfolio-content .info h3
+{
+  margin: 0;
+}
+.portfolio .portfolio-content .info p
+{
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/** END Portfolio Section **/
+
+/** Start About Section **/
+.about
+{
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.about .about-content
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+@media  (max-width:991px)
+{
+  .about .about-content
+  {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.about .about-content .image
+{
+  width: 250px;
+  height: 375px;
+  position: relative;
+}
+@media  (max-width:991px)
+{
+  .about .about-content .image
+  {
+    margin: 0 auto 60px;
+  }
+}
+.about .about-content .image::before
+{
+  content: "";
+  position: absolute;
+  background-color: #ebeced;
+  width: 80px;
+  height: calc(100% + 80px);
+  left: -20px;
+  top:-40px;
+  z-index: -1;
+}
+.about .about-content .image::after
+{
+  content: "";
+  position: absolute;
+  border-left: 80px solid var(--main-color);
+  border-bottom: 80px solid var(--main-color);
+  height: 300px;
+  width: 100px;
+  right: -125px;
+  top:-40px;
+  z-index: -1;
+}
+@media  (max-width:991px)
+{
+  .about .about-content .image::before,
+  .about .about-content .image::after
+  {
+    display: none;
+  }
+}
+.about .about-content .image img
+{
+  max-width: 100%;
+}
+.about .about-content .about-text
+{
+  flex-basis: 500px;
+}
+@media  (max-width:991px)
+{
+  .about .about-content .about-text
+  {
+
+    flex-basis: calc(100% - 500px);
+  }
+}
+.about .about-content .about-text p:first-of-type
+{
+  font-weight: bold;
+  line-height: 2;
+  margin-bottom: 50px;
+}
+.about .about-content .about-text hr
+{
+  border-color: var(--main-color);
+  width: 50%;
+  display: inline-block;
+}
+.about .about-content .about-text p:last-of-type
+{
+  line-height: 2;
+  color:#777;
+}
+
+/** End About Section **/
