@@ -18,10 +18,13 @@
   box-sizing: border-box;
   
 }
-
 body
 {
   font-family: 'Work Sans', sans-serif;
+}
+html
+{
+  scroll-behavior: smooth;
 }
 
 /* Main Container */
