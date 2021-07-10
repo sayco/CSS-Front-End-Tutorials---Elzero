@@ -193,7 +193,7 @@ body
 /** Start Landing Page **/
 .landing
 {
-  background-image: url(../images/Mountains.svg);
+  background-image: url(../images/Mountains.webp);
   background-size: cover;
   height: calc(100vh - 69px);
 position: relative;
