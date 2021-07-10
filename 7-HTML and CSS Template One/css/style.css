@@ -128,7 +128,7 @@ body
   border-width: 15px;
   border-color:  transparent transparent #eee transparent;
   right: 0;
-  top: -30px;
+  top: -29px;
 }
 .header .links ul li
 {
@@ -499,6 +499,15 @@ position: relative;
   font-weight: 800;
   /* letter-spacing: -2px; */
   text-decoration: none;
+}
+@media(max-width:676px)
+{
+  .contact .contact-content p,
+  .contact .contact-content a
+  {
+    font-size: 25px;
+  }
+
 }
 .contact .contact-content .social
 {
